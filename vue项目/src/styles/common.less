@@ -1,0 +1,32 @@
+@thum-bgColor:#009a61;
+@thum-fontColor:#fff;
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.btn-primary {
+  color: #fff;
+  background-color: @thum-bgColor;
+  border-color: lighten(@thum-bgColor,50%);
+}
+.btn-primary:hover{
+  background-color: darken(@thum-bgColor,5%);
+  border-color: darken(@thum-bgColor,15%);
+}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+  color: #fff;
+  background-color: @thum-bgColor;
+  border-color: darken(@thum-bgColor,20%);
+}
+@media (max-width: 768px){
+	.panel-body img{
+	  width:100%;
+	  height:auto;
+	}
+}
